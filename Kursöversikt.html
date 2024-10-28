@@ -1,101 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="img/favicon.ico">
     <meta charset="utf-8">
     <title>Anmälan till kurser</title>
-
-    <nav>
-        <ul>
-            <li><a href="Startsida.html">Startsida</a></li>
-            <li><a href="Anmälan till kurser.html">Anmälan</a></li>
-            <li><a href="Kursöversikt.html">Kursöversikt</a></li>
-        </ul>
-    </nav>
+    <link rel="icon" href="img/favicon.ico">
     
-    <Header>
-
-        <img alt="UX UX_image" src="img/UX _image.png">
-
-    </Header>
     <style>
+       body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: rgba(41, 103, 165, 0.466);
+            color: #060118;
+            margin: 2rem;
+            padding: 3px;
+        }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: rgba(41, 103, 165, 0.466);
-    color: #060118;
-    margin: 20;
-    padding: 10;
-}
-header {
-    text-align: center;
-    padding: 30px;
-    background-color:rgb(60, 115, 169);
-    border-radius: 50px;
-    margin-left: 40px;
-    padding: 100px;
-    font-size: 20px;
+        header {
+            text-align: center;
+            padding: 30px;
+            background-color: rgb(60, 115, 169);
+            border-radius: 50px;
+            font-size: 20px;
+            margin: 20px 40px;
+        }
 
-}
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            gap: 30px;
+            justify-content: center;
+            padding: 0;
+        }
 
+        nav ul li {
+            display: inline;
+        }
 
-footer {
-    margin: 3cap;
-    color: rgba(2, 15, 27, 0.966);
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 15px;
-    text-align:center;       
-    
-}
-           
-        
-.kurs-tabell {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
 
-.kurs-tabell th, .kurs-tabell td {
-    padding: 12px;
-    text-align: left;
-    border: 1px solid #000000;
-}
+        footer {
+            margin: 3rem;
+            color: rgba(2, 15, 27, 0.966);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 15px;
+            text-align: center;       
+        }
+            
+        .kurs-tabell {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
 
-.kurs-tabell th {
-    background-color: #16426e;
-    color: rgb(255, 255, 255);
-}
+        .kurs-tabell th, .kurs-tabell td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #000000;
+        }
 
-.kurs-tabell td {
-    background-color: #f9f9f9;
-}
+        .kurs-tabell th {
+            background-color: #16426e;
+            color: rgb(255, 255, 255);
+        }
 
-.kurs-tabell {
-    background-color: #f2f2f2;
-}
-@media (min-width: 600px) and (max-width: 1200px) {
-    .kurs-tabell th, .kurs-tabell td {
-        padding: 16px;
-    }
+        .kurs-tabell td {
+            background-color: #f9f9f9;
+        }
 
-    .kurs-tabell {
-        font-size: 1.1em;
-    }
+        @media (min-width: 600px) and (max-width: 1200px) {
+            .kurs-tabell th, .kurs-tabell td {
+                padding: 16px;
+            }
 
-    nav ul {
-        gap: 30px;
-    }
-}
-/* iPhone 14 Pro Max anpassning */
-@media (min-width: 430px) and (max-width: 1290px) and (orientation: portrait) {
+            .kurs-tabell {
+                font-size: 1.1em;
+            }
 
-}
-
-
- </style>
-
+            nav ul {
+                gap: 30px;
+            }
+        }
+    </style>
 </head>
+
 <body>
+<header>
+     <nav>
+            <ul>
+                <li><a href="Startsida.html">Startsida</a></li>
+                <li><a href="Anmälan%20till%20kurser.html">Anmälan</a></li>
+                <li><a href="Kursöversikt.html">Kursöversikt</a></li>
+            </ul>
+    </nav>
+</header>
+    <img alt="UX UX_image" src="img/UX%20_image.png">
+
     <main>
         <h1>Aktuella kurser</h1>
         <table class="kurs-tabell">
@@ -118,7 +121,7 @@ footer {
                     <td>Linköping</td>
                 </tr>
                 <tr>
-                    <td>Programering för UX</td>
+                    <td>Programmering för UX</td>
                     <td>15 januari 2025</td>
                     <td>Linköping</td>
                 </tr>
@@ -129,7 +132,5 @@ footer {
     <footer>
         <h1>MSU skolan</h1>
     </footer>
-
-    
 </body>
 </html>

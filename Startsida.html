@@ -1,43 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="img/favicon.ico">
-    <nav>
-        <ul>
-            <li><a href="Startsida.html">Startsida</a></li>
-            <li><a href="Anmälan till kurser.html">Anmälan</a></li>
-            <li><a href="Kursöversikt.html">Kursöversikt</a></li>
-        </ul>
-    </nav>
-    <header>
-        <img alt="UX UX_image" src="img\UX _image.png">
-    
-    </header>
-
     <meta charset="utf-8">
     <title> UX Utbildning </title>
+    <meta name="UX-utbildningen" content="UX, kurser, utbildning">
     <style>
         body {
-            font-family:'Times New Roman', Times, serif;
-            margin: 2;
-            Padding: 2;
+            font-family: Arial, sans-serif;
+            text-align: center;
             background-color: rgba(41, 103, 165, 0.466);
-           
-        
-
+            color: #060118;
+            margin: 2rem;
+            padding: 3px;
         }
         header {
             text-align: center;
             padding: 30px;
-            margin: 2cap;
-            background-color:rgb(60, 115, 169);
-            text-decoration:double;
+            background-color: rgb(60, 115, 169);
             border-radius: 50px;
-            padding: 50px;
-            margin-left: 40px;
             font-size: 20px;
-
-
+            margin: 20px 40px;
         }
         section {
             text-align:center;
@@ -66,11 +48,40 @@
             text-align:center;
 
         }
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            gap: 30px;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
  
      </style>
 
-</head>
-    <body>
+    <link rel="icon" href="img/favicon.ico">
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Startsida.html">Startsida</a></li>
+                <li><a href="Anmälan%20till%20kurser.html">Anmälan</a></li>
+                <li><a href="Kursöversikt.html">Kursöversikt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img alt="UX UX_image" src="img/UX%20_image.png">
+
+
         <main>     
 
     <!--Header-->
@@ -89,11 +100,11 @@
 
     <!--Kursutbud-->
     <div class="kurser">
-            <div class="kurser">
-                <h2>Kursutbud</h2>
-                <h3>Grundkurs i UX-design</h3>
-                <h4>Programering för UX</h4>
-        </div>
+        <h2>Kursutbud</h2>
+        <h3>Grundkurs i UX-design</h3>
+        <h4>Programering för UX</h4>
+    </div>    
+  
     </section>
 
         <footer>
